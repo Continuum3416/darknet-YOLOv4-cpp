@@ -13,7 +13,15 @@
 #include <stdexcept>
 #include <stdio.h> 
 
-#include <windows.h> // For GetCurrentDirectoryA
+#ifdef _WIN32
+    #include <windows.h>
+#elif defined(__unix__)  // For Unix-like systems (Linux, BSD, etc.)
+    #include <unistd.h>
+#elif defined(__APPLE__)  // For macOS systems
+    #include <unistd.h>
+#elif defined(__POSIX__)  // For POSIX-compliant systems
+    #include <unistd.h>
+#endif
 
 namespace fs = std::filesystem;
 
@@ -199,7 +207,11 @@ public:
         std::string command = buildCommand();
 
         // Execute the command and capture the output
+#ifdef _WIN32
         FILE* pipe = _popen(command.c_str(), "r");
+#elif defined(__unix__) 
+        FILE* pipe = popen(command.c_str(), "r");
+#endif
         if (!pipe) {
             throw std::runtime_error("Darknet demo execution failed");
         }
