@@ -1,0 +1,7 @@
+.vscode/
+build/
+media/**/*.mp4
+src/bin/
+src/build/
+*.exe
+weights/

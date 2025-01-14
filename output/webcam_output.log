@@ -1,0 +1,1080 @@
+ _DEBUG is used 
+Demo
+net.optimized_memory = 0 
+mini_batch = 1, batch = 8, time_steps = 1, train = 0 
+Create CUDA-stream - 0 
+ Create cudnn-handle 0 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+nms_kind: greedynms (1), beta = 0.600000 
+
+ seen 64, trained: 32032 K-images (500 Kilo-batches_64) 
+Webcam index: 0
+[ INFO:0@4.420] global videoio_registry.cpp:244 cv::`anonymous-namespace'::VideoBackendRegistry::VideoBackendRegistry VIDEOIO: Enabled backends(9, sorted by priority): FFMPEG(1000); GSTREAMER(990); INTEL_MFX(980); MSMF(970); DSHOW(960); CV_IMAGES(950); CV_MJPEG(940); UEYE(930); OBSENSOR(920)
+[ INFO:0@4.421] global backend_plugin.cpp:383 cv::impl::getPluginCandidates Found 2 plugin(s) for GSTREAMER
+[ INFO:0@4.421] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_videoio_gstreamer4100_64d.dll => FAILED
+[ INFO:0@4.421] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_videoio_gstreamer4100_64d.dll => FAILED
+[ INFO:0@4.495] global cap_msmf.cpp:1032 CvCapture_MSMF::configureHW MSMF: Using D3D11 video acceleration on GPU device: NVIDIA GeForce RTX 4070 Laptop GPU
+[ INFO:1@5.388] global registry_parallel.impl.hpp:96 cv::parallel::ParallelBackendRegistry::ParallelBackendRegistry core(parallel): Enabled backends(3, sorted by priority): ONETBB(1000); TBB(990); OPENMP(980)
+[ INFO:1@5.388] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_core_parallel_onetbb4100_64d.dll => FAILED
+[ INFO:1@5.389] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_core_parallel_onetbb4100_64d.dll => FAILED
+[ INFO:1@5.389] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_core_parallel_tbb4100_64d.dll => FAILED
+[ INFO:1@5.389] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_core_parallel_tbb4100_64d.dll => FAILED
+[ INFO:1@5.389] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_core_parallel_openmp4100_64d.dll => FAILED
+[ INFO:1@5.389] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_core_parallel_openmp4100_64d.dll => FAILED
+Video stream: 640 x 480 
+[ INFO:0@5.600] global registry.impl.hpp:114 cv::highgui_backend::UIBackendRegistry::UIBackendRegistry UI: Enabled backends(4, sorted by priority): GTK(1000); GTK3(990); GTK2(980); WIN32(970) + BUILTIN(WIN32UI)
+[ INFO:0@5.600] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_highgui_gtk4100_64.dll => FAILED
+[ INFO:0@5.600] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_highgui_gtk4100_64.dll => FAILED
+[ INFO:0@5.600] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_highgui_gtk34100_64.dll => FAILED
+[ INFO:0@5.601] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_highgui_gtk34100_64.dll => FAILED
+[ INFO:0@5.601] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_highgui_gtk24100_64.dll => FAILED
+[ INFO:0@5.601] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_highgui_gtk24100_64.dll => FAILED
+[ INFO:0@5.601] global backend.cpp:90 cv::highgui_backend::createUIBackend UI: using backend: WIN32 (priority=970)
+[ INFO:0@5.601] global window_w32.cpp:2993 cv::impl::Win32BackendUI::createWindow OpenCV/UI: Creating Win32UI window: Demo (0)
+[ INFO:0@5.620] global backend_plugin.cpp:383 cv::impl::getPluginCandidates Found 3 plugin(s) for FFMPEG
+[ INFO:0@5.620] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load C:\Libraries\OpenCV\build\install\x64\vc17\bin\opencv_videoio_ffmpeg4100_64d.dll => FAILED
+[ INFO:0@5.621] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_videoio_ffmpeg4100_64d.dll => FAILED
+[ INFO:0@5.622] global plugin_loader.impl.hpp:67 cv::plugin::impl::DynamicLib::libraryLoad load opencv_videoio_ffmpeg4100_64.dll => OK
+[ INFO:0@5.622] global backend_plugin.cpp:50 cv::impl::PluginBackend::initCaptureAPI Found entry: 'opencv_videoio_capture_plugin_init_v1'
+[ INFO:0@5.622] global backend_plugin.cpp:169 cv::impl::PluginBackend::checkCompatibility Video I/O: initialized 'FFmpeg OpenCV Video I/O Capture plugin': built with OpenCV 4.10 (ABI/API = 1/1), current OpenCV version is '4.10.0' (ABI/API = 1/1)
+[ INFO:0@5.622] global backend_plugin.cpp:69 cv::impl::PluginBackend::initCaptureAPI Video I/O: plugin is ready to use 'FFmpeg OpenCV Video I/O Capture plugin'
+[ INFO:0@5.622] global backend_plugin.cpp:84 cv::impl::PluginBackend::initWriterAPI Found entry: 'opencv_videoio_writer_plugin_init_v1'
+[ INFO:0@5.622] global backend_plugin.cpp:169 cv::impl::PluginBackend::checkCompatibility Video I/O: initialized 'FFmpeg OpenCV Video I/O Writer plugin': built with OpenCV 4.10 (ABI/API = 1/1), current OpenCV version is '4.10.0' (ABI/API = 1/1)
+[ INFO:0@5.622] global backend_plugin.cpp:103 cv::impl::PluginBackend::initWriterAPI Video I/O: plugin is ready to use 'FFmpeg OpenCV Video I/O Writer plugin'
+[H[JObjects:
+
+
+FPS:0.0 	 AVG_FPS:0.0
+[H[JObjects:
+
+book: 26% 
+bottle: 38% 
+bottle: 27% 
+person: 98% 
+bottle: 66% 
+
+FPS:1.7 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 28% 
+book: 25% 
+bottle: 35% 
+person: 99% 
+bottle: 64% 
+
+FPS:3.2 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+book: 27% 
+bottle: 29% 
+bottle: 63% 
+person: 99% 
+
+FPS:4.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 29% 
+bottle: 31% 
+bottle: 61% 
+person: 98% 
+chair: 33% 
+
+FPS:5.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 29% 
+bottle: 31% 
+bottle: 63% 
+person: 98% 
+
+FPS:6.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 35% 
+book: 29% 
+book: 27% 
+book: 25% 
+bottle: 32% 
+bottle: 59% 
+person: 99% 
+chair: 28% 
+
+FPS:7.2 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 28% 
+bottle: 36% 
+bottle: 32% 
+bottle: 56% 
+chair: 30% 
+person: 98% 
+
+FPS:8.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 30% 
+bottle: 32% 
+bottle: 28% 
+chair: 27% 
+bottle: 55% 
+person: 99% 
+
+FPS:8.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 35% 
+book: 28% 
+bottle: 32% 
+person: 99% 
+bottle: 24% 
+bottle: 63% 
+chair: 25% 
+
+FPS:9.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 29% 
+bottle: 38% 
+bottle: 26% 
+bottle: 57% 
+chair: 27% 
+person: 98% 
+
+FPS:9.9 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 32% 
+book: 31% 
+bottle: 34% 
+bottle: 28% 
+person: 99% 
+bottle: 56% 
+
+FPS:10.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 26% 
+bottle: 38% 
+bottle: 59% 
+chair: 24% 
+person: 98% 
+
+FPS:11.0 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 30% 
+bottle: 28% 
+bottle: 47% 
+bottle: 52% 
+person: 98% 
+
+FPS:11.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 32% 
+book: 29% 
+bottle: 28% 
+person: 97% 
+bottle: 60% 
+
+FPS:11.9 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 35% 
+book: 31% 
+bottle: 32% 
+bottle: 25% 
+bottle: 50% 
+person: 98% 
+chair: 29% 
+
+FPS:12.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 42% 
+book: 32% 
+book: 31% 
+book: 30% 
+book: 27% 
+person: 97% 
+bottle: 33% 
+chair: 28% 
+bottle: 60% 
+
+FPS:12.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 33% 
+book: 29% 
+bottle: 33% 
+bottle: 26% 
+chair: 30% 
+person: 98% 
+bottle: 62% 
+
+FPS:12.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+bottle: 31% 
+bottle: 25% 
+person: 98% 
+bottle: 69% 
+
+FPS:13.0 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 28% 
+bottle: 43% 
+bottle: 36% 
+bottle: 67% 
+person: 98% 
+
+FPS:13.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+bottle: 30% 
+chair: 29% 
+person: 98% 
+bottle: 68% 
+
+FPS:13.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+bottle: 26% 
+chair: 34% 
+person: 98% 
+bottle: 63% 
+
+FPS:13.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+bottle: 29% 
+chair: 44% 
+person: 97% 
+bottle: 61% 
+
+FPS:13.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 36% 
+book: 26% 
+bottle: 37% 
+person: 96% 
+chair: 44% 
+bottle: 61% 
+
+FPS:13.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 28% 
+book: 26% 
+book: 25% 
+bottle: 28% 
+person: 96% 
+chair: 53% 
+bottle: 63% 
+
+FPS:14.0 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 33% 
+bottle: 26% 
+chair: 46% 
+bottle: 31% 
+person: 96% 
+bottle: 56% 
+
+FPS:14.2 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 36% 
+book: 31% 
+book: 28% 
+book: 27% 
+bottle: 39% 
+person: 96% 
+chair: 47% 
+bottle: 60% 
+
+FPS:14.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 29% 
+book: 27% 
+book: 25% 
+bottle: 40% 
+person: 96% 
+chair: 45% 
+bottle: 68% 
+
+FPS:14.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 30% 
+book: 28% 
+book: 25% 
+bottle: 36% 
+person: 96% 
+chair: 45% 
+bottle: 72% 
+
+FPS:14.3 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+book: 27% 
+bottle: 29% 
+chair: 34% 
+person: 96% 
+bottle: 53% 
+
+FPS:14.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 28% 
+bottle: 37% 
+chair: 47% 
+person: 95% 
+bottle: 70% 
+
+FPS:14.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 27% 
+bottle: 31% 
+bottle: 37% 
+person: 96% 
+chair: 47% 
+bottle: 69% 
+
+FPS:14.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 24% 
+chair: 58% 
+person: 95% 
+bottle: 66% 
+
+FPS:14.4 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 26% 
+chair: 54% 
+person: 96% 
+bottle: 76% 
+
+FPS:14.6 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 25% 
+book: 24% 
+chair: 34% 
+person: 97% 
+bottle: 61% 
+
+FPS:14.7 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 26% 
+book: 24% 
+bottle: 25% 
+chair: 45% 
+person: 97% 
+bottle: 61% 
+
+FPS:14.7 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 28% 
+chair: 43% 
+person: 96% 
+bottle: 55% 
+
+FPS:14.8 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 25% 
+bottle: 25% 
+person: 97% 
+chair: 43% 
+bottle: 55% 
+
+FPS:14.9 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 27% 
+book: 27% 
+bottle: 26% 
+chair: 35% 
+person: 96% 
+bottle: 58% 
+
+FPS:14.5 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 25% 
+book: 25% 
+bottle: 34% 
+person: 96% 
+chair: 28% 
+bottle: 65% 
+
+FPS:14.9 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+book: 26% 
+bottle: 26% 
+chair: 34% 
+person: 97% 
+bottle: 61% 
+
+FPS:15.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+chair: 42% 
+person: 97% 
+bottle: 57% 
+
+FPS:15.1 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+chair: 39% 
+bottle: 26% 
+person: 97% 
+bottle: 69% 
+
+FPS:15.2 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 27% 
+chair: 39% 
+bottle: 25% 
+person: 96% 
+bottle: 62% 
+
+FPS:14.9 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 26% 
+bottle: 36% 
+chair: 37% 
+person: 98% 
+bottle: 55% 
+
+FPS:15.0 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+bottle: 30% 
+bottle: 24% 
+chair: 36% 
+person: 97% 
+bottle: 60% 
+
+FPS:15.0 	 AVG_FPS:0.0
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 32% 
+chair: 36% 
+person: 97% 
+bottle: 60% 
+
+FPS:15.1 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 25% 
+bottle: 30% 
+chair: 34% 
+person: 97% 
+bottle: 58% 
+
+FPS:14.9 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 25% 
+bottle: 33% 
+person: 97% 
+chair: 27% 
+bottle: 51% 
+
+FPS:15.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+chair: 28% 
+bottle: 28% 
+person: 97% 
+bottle: 60% 
+
+FPS:15.0 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 28% 
+bottle: 32% 
+chair: 33% 
+person: 97% 
+bottle: 62% 
+
+FPS:16.5 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 27% 
+bottle: 33% 
+chair: 26% 
+bottle: 27% 
+person: 97% 
+bottle: 57% 
+
+FPS:15.9 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 24% 
+bottle: 26% 
+chair: 25% 
+person: 98% 
+bottle: 59% 
+
+FPS:15.9 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 32% 
+book: 31% 
+book: 24% 
+person: 97% 
+bottle: 56% 
+
+FPS:15.9 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 35% 
+book: 29% 
+book: 24% 
+person: 98% 
+chair: 25% 
+bottle: 54% 
+
+FPS:15.9 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 34% 
+book: 29% 
+bottle: 54% 
+person: 98% 
+
+FPS:15.5 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 26% 
+chair: 24% 
+person: 97% 
+bottle: 52% 
+
+FPS:15.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 29% 
+chair: 32% 
+person: 98% 
+bottle: 72% 
+
+FPS:15.6 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 27% 
+book: 24% 
+bottle: 25% 
+chair: 24% 
+person: 98% 
+bottle: 63% 
+
+FPS:15.6 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 29% 
+bottle: 31% 
+person: 98% 
+bottle: 61% 
+
+FPS:15.6 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 32% 
+book: 30% 
+bottle: 28% 
+person: 98% 
+chair: 29% 
+bottle: 64% 
+
+FPS:15.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 27% 
+bottle: 33% 
+bottle: 25% 
+person: 98% 
+bottle: 62% 
+
+FPS:16.1 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 27% 
+chair: 28% 
+person: 98% 
+bottle: 67% 
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+book: 25% 
+bottle: 33% 
+bottle: 66% 
+person: 98% 
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 25% 
+bottle: 29% 
+person: 97% 
+chair: 25% 
+bottle: 65% 
+
+FPS:15.6 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 24% 
+bottle: 25% 
+bottle: 67% 
+person: 98% 
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 25% 
+bottle: 29% 
+chair: 25% 
+person: 98% 
+bottle: 63% 
+
+FPS:15.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+book: 24% 
+bottle: 29% 
+bottle: 64% 
+person: 98% 
+
+FPS:17.0 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 27% 
+book: 26% 
+person: 97% 
+chair: 26% 
+bottle: 70% 
+
+FPS:16.8 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 35% 
+book: 26% 
+bottle: 58% 
+person: 98% 
+
+FPS:16.2 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 28% 
+bottle: 52% 
+person: 97% 
+
+FPS:16.1 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 27% 
+bottle: 33% 
+bottle: 25% 
+chair: 26% 
+person: 98% 
+bottle: 63% 
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 27% 
+bottle: 59% 
+person: 97% 
+
+FPS:16.9 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 26% 
+book: 24% 
+bottle: 28% 
+person: 97% 
+bottle: 51% 
+
+FPS:17.2 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+bottle: 57% 
+person: 98% 
+
+FPS:16.5 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+book: 24% 
+bottle: 30% 
+person: 98% 
+bottle: 64% 
+
+FPS:16.4 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 33% 
+book: 32% 
+book: 27% 
+bottle: 28% 
+person: 98% 
+bottle: 69% 
+
+FPS:16.1 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 29% 
+bottle: 24% 
+bottle: 66% 
+person: 97% 
+
+FPS:15.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 29% 
+bottle: 26% 
+person: 98% 
+bottle: 66% 
+
+FPS:16.0 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 29% 
+book: 27% 
+bottle: 57% 
+person: 98% 
+
+FPS:16.0 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+bottle: 27% 
+bottle: 58% 
+person: 98% 
+
+FPS:15.4 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 25% 
+person: 97% 
+chair: 25% 
+bottle: 60% 
+
+FPS:15.6 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 26% 
+bottle: 25% 
+person: 98% 
+chair: 26% 
+bottle: 62% 
+
+FPS:15.2 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+bottle: 61% 
+bottle: 28% 
+person: 97% 
+
+FPS:14.8 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 24% 
+chair: 27% 
+person: 98% 
+bottle: 58% 
+
+FPS:14.8 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 31% 
+book: 25% 
+chair: 24% 
+person: 98% 
+bottle: 62% 
+
+FPS:14.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 28% 
+bottle: 24% 
+bottle: 59% 
+person: 98% 
+
+FPS:14.6 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+chair: 27% 
+bottle: 25% 
+person: 98% 
+bottle: 60% 
+
+FPS:14.3 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 30% 
+book: 25% 
+bottle: 54% 
+person: 97% 
+
+FPS:14.4 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 27% 
+book: 27% 
+bottle: 27% 
+chair: 25% 
+person: 98% 
+bottle: 61% 
+
+FPS:14.7 	 AVG_FPS:15.1
+
+ cvWriteFrame 
+[H[JObjects:
+
+book: 26% 
+book: 25% 
+bottle: 65% 
+person: 97% 
+
+FPS:14.3 	 AVG_FPS:14.3
+
+ cvWriteFram

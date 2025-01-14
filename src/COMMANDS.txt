@@ -1,0 +1,42 @@
+
+
+// cd C:\Libraries\YOLO\darknet-master
+
+// image: darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg
+
+// change detection threshold: darknet detect cfg/yolov4.cfg weights/yolov3.weights data/dog.jpg -thresh 0
+
+// webcam: darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights
+
+// save vid from webcam: darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights -out_filename media/output.mp4
+
+// video: darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights -ext_output test.mp4
+
+
+// multiple image: darknet detect cfg/yolov4.cfg weights/yolov4.weights
+
+// process a list of images data/train.txt and save results of detection to result.json:
+// darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output -dont_show -out result.json < data/train.txt
+
+
+
+
+// image: 
+// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights
+// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg
+// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg -thresh 0.25
+// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg -ext_output dog_coords.jpg -thresh 0.25 
+// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights -ext_output data/person.jpg > output.txt
+
+
+// Yolo v3 COCO image
+// darknet detect cfg/yolov4.cfg weights/yolov4.weights
+
+// webcam:
+// darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights
+// darknet detector demo "cfg/coco.file" "cfg/config.cfg" "weights/weights.weights" -out_filename "media/output.mp4" -thresh 0.5
+// darknet detector demo "cfg/coco.file" "cfg/config.cfg" "weights/weights" -out_filename "media/output.mp4" -thresh 0.5 > "output/output.log"
+
+
+// darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights -ext_output test.mp4
+// darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -ext_output -dont_show -out result.json < data/train.txt
