@@ -8,9 +8,12 @@
 
 int main() {
     try {
-        std::string data_output_path = "D:/.C.S_Docs_and_Projects_C++/YOLO/darknet_test/output/webcam_output.log"; 
-        std::string video_output_path = "D:/.C.S_Docs_and_Projects_C++/YOLO/darknet_test/media/output.mp4";
+        std::string data_output_path = "D:/.C.S_Docs_and_Projects_C++/YOLO/darknet-YOLOv4-cpp/output/webcam_output.log"; 
+        std::string video_output_path = "D:/.C.S_Docs_and_Projects_C++/YOLO/darknet-YOLOv4-cpp/media/output.mp4";
         std::string threshold = "0.24";
+
+        std::cout << path::data_path << std::endl;
+
         DarknetWebcam darknet(  path::darknet_dir,
                                 path::darknet_exe,
                                 path::data_path,

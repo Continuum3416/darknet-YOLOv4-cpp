@@ -106,70 +106,12 @@ public:
         return command;
     }
 
-    void executeDemo() const{
-        // Change current directory to Darknet directory
-        fs::current_path(darknet_dir);
-
-        // Build command
-        std::string command = buildCommand();
-
-        // Execute the command and check the result
-        int result = std::system(command.c_str());
-        if (result != 0) {
-            throw std::runtime_error("Darknet demo execution failed with code " + std::to_string(result));
-        }
-
-        std::cout << "Darknet demo executed successfully.";
-
-        // Open output file for writing the coordinates (to the specified directory)
-        std::string outputDir = "D:/./C.S_Docs_and_Projects_C++/YOLO/darknet_test/src/";
-        std::string outputFile = outputDir + "bounding_boxes.txt";
-        std::ofstream out(outputFile);
-
-        if (!out) {
-            throw std::runtime_error("Failed to open output file for writing: " + outputFile);
-        }
-
-        // Load the output file that contains bounding box data (if redirected to a file)
-        if (data_output_file) {
-            std::ifstream outputFileStream(*data_output_file);
-            std::string line;
-            while (std::getline(outputFileStream, line)) {
-                // Parse the output to get bounding boxes
-                std::istringstream iss(line);
-                float x, y, w, h;
-                int class_id;
-                float confidence;
-
-                // Parse bounding box coordinates and class info
-                if (iss >> class_id >> confidence >> x >> y >> w >> h) {
-                    // Write bounding box data to the output file
-                    out << "Class: " << class_id << ", Confidence: " << confidence << "\n";
-                    out << "Bounding Box: x=" << x << ", y=" << y << ", w=" << w << ", h=" << h << "\n\n";
-
-                    // Optionally, print to console as well
-                    std::cout << "Class: " << class_id << ", Confidence: " << confidence << "\n";
-                    std::cout << "Bounding Box: x=" << x << ", y=" << y << ", w=" << w << ", h=" << h << "\n";
-                }
-            }
-        }
-
-        // Close the output file after writing
-        out.close();
-
-        std::cout << "Bounding box coordinates saved to: " << outputFile << std::endl;
-    }
-
-    
-    // Execute the command and capture output
-    // void executeDemo() const {
+    // void executeDemo() const{
     //     // Change current directory to Darknet directory
     //     fs::current_path(darknet_dir);
 
     //     // Build command
     //     std::string command = buildCommand();
-
-    //     //std::cout << "\n\nExecuting command " << command << "\n\n";
 
     //     // Execute the command and check the result
     //     int result = std::system(command.c_str());
@@ -178,19 +120,77 @@ public:
     //     }
 
     //     std::cout << "Darknet demo executed successfully.";
-    //     if (video_output_file) {
-    //         std::cout << "Video will be saved to: " << *video_output_file << std::endl;
+
+    //     // Open output file for writing the coordinates (to the specified directory)
+    //     std::string outputDir = "D:/./C.S_Docs_and_Projects_C++/YOLO/darknet_test/src/";
+    //     std::string outputFile = outputDir + "bounding_boxes.txt";
+    //     std::ofstream out(outputFile);
+
+    //     if (!out) {
+    //         throw std::runtime_error("Failed to open output file for writing: " + outputFile);
     //     }
-    //     if (threshold) {
-    //         std::cout << "Threshold set to: " << *threshold << std::endl;
-    //     }
+
+    //     // Load the output file that contains bounding box data (if redirected to a file)
     //     if (data_output_file) {
-    //         std::cout << "Console output will be saved to: " << *data_output_file << std::endl;
+    //         std::ifstream outputFileStream(*data_output_file);
+    //         std::string line;
+    //         while (std::getline(outputFileStream, line)) {
+    //             // Parse the output to get bounding boxes
+    //             std::istringstream iss(line);
+    //             float x, y, w, h;
+    //             int class_id;
+    //             float confidence;
+
+    //             // Parse bounding box coordinates and class info
+    //             if (iss >> class_id >> confidence >> x >> y >> w >> h) {
+    //                 // Write bounding box data to the output file
+    //                 out << "Class: " << class_id << ", Confidence: " << confidence << "\n";
+    //                 out << "Bounding Box: x=" << x << ", y=" << y << ", w=" << w << ", h=" << h << "\n\n";
+
+    //                 // Optionally, print to console as well
+    //                 std::cout << "Class: " << class_id << ", Confidence: " << confidence << "\n";
+    //                 std::cout << "Bounding Box: x=" << x << ", y=" << y << ", w=" << w << ", h=" << h << "\n";
+    //             }
+    //         }
     //     }
-    //     std::cout << std::endl; 
 
+    //     // Close the output file after writing
+    //     out.close();
 
+    //     std::cout << "Bounding box coordinates saved to: " << outputFile << std::endl;
     // }
+
+    
+    // Execute the command and capture output
+    void executeDemo() const {
+        // Change current directory to Darknet directory
+        fs::current_path(darknet_dir);
+
+        // Build command
+        std::string command = buildCommand();
+
+        //std::cout << "\n\nExecuting command " << command << "\n\n";
+
+        // Execute the command and check the result
+        int result = std::system(command.c_str());
+        if (result != 0) {
+            throw std::runtime_error("Darknet demo execution failed with code " + std::to_string(result));
+        }
+
+        std::cout << "Darknet demo executed successfully.";
+        if (video_output_file) {
+            std::cout << "Video will be saved to: " << *video_output_file << std::endl;
+        }
+        if (threshold) {
+            std::cout << "Threshold set to: " << *threshold << std::endl;
+        }
+        if (data_output_file) {
+            std::cout << "Console output will be saved to: " << *data_output_file << std::endl;
+        }
+        std::cout << std::endl; 
+
+
+    }
 
 
     
