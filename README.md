@@ -1,14 +1,8 @@
 # Darknet YOLOv4 C++ command-line wrapper with OpenCV-cpp and CUDA
 
-#### Minimum requirements: C++17
+Minimum requirements: C++17
 
-#### How to use on the command line
-
-If you use `build.ps1` script or the makefile (Linux only) you will find `darknet` in the root directory.
-
-If you use the deprecated Visual Studio solutions, you will find `darknet` in the directory `\build\darknet\x64`.
-
-If you customize build with CMake GUI, darknet executable will be installed in your preferred folder.
+#### Lists of command lines:
 
 - Yolo v4 COCO - **image**: `./darknet detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -thresh 0.25`
 - **Output coordinates** of objects: `./darknet detector test cfg/coco.data yolov4.cfg yolov4.weights -ext_output dog.jpg`
@@ -34,3 +28,15 @@ If you customize build with CMake GUI, darknet executable will be installed in y
 - To calculate anchors: `./darknet detector calc_anchors data/obj.data -num_of_clusters 9 -width 416 -height 416`
 - To check accuracy mAP@IoU=50: `./darknet detector map data/obj.data yolo-obj.cfg backup\yolo-obj_7000.weights`
 - To check accuracy mAP@IoU=75: `./darknet detector map data/obj.data yolo-obj.cfg backup\yolo-obj_7000.weights -iou_thresh 0.75`
+
+#### To run the wrapper,
+Go to the src folder, which contains some codes at webcam.cpp and simply run
+```
+g++ webcam.cpp -o ./bin/webcam.exe; ./bin/webcam.exe
+```
+to run, or if you use OpenCV, build the folder with CMake and run
+```
+cmake --build .\build\ --config Debug; .\build\Debug\webcam.exe
+# or,
+cmake --build .\build\ --config Release; .\build\Release\webcam.exe
+```
