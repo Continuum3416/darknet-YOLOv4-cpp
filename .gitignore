@@ -4,4 +4,5 @@ media/**/*.mp4
 src/bin/
 src/build/
 *.exe
-weights/
+weights/yolov4.weights
+weights/yolov4-tiny.weights
