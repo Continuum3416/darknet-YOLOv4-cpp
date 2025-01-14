@@ -1,4 +1,4 @@
-darknet YOLOv4 set up for C++ with OpenCV-cpp and CUDA
+# Darknet YOLOv4 C++ command-line wrapper with OpenCV-cpp and CUDA
 
 #### Minimum requirements: C++17
 
