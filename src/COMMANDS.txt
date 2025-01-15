@@ -22,20 +22,20 @@
 
 
 // image: 
-// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights
-// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg
-// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg -thresh 0.25
-// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg -ext_output dog_coords.jpg -thresh 0.25 
-// darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights -ext_output data/person.jpg > output.txt
+darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights
+darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg
+darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg -thresh 0.25
+darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights data/dog.jpg -ext_output dog_coords.jpg -thresh 0.25 > coordinate.log
+darknet detector test cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights -ext_output data/person.jpg > output.txt
 
 
 // Yolo v3 COCO image
 // darknet detect cfg/yolov4.cfg weights/yolov4.weights
 
 // webcam:
-// darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights
-// darknet detector demo "cfg/coco.file" "cfg/config.cfg" "weights/weights.weights" -out_filename "media/output.mp4" -thresh 0.5
-// darknet detector demo "cfg/coco.file" "cfg/config.cfg" "weights/weights" -out_filename "media/output.mp4" -thresh 0.5 > "output/output.log"
+darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights
+darknet detector demo "cfg/coco.file" "cfg/config.cfg" "weights/weights.weights" -out_filename "media/output.mp4" -thresh 0.5
+darknet detector demo "cfg/coco.file" "cfg/config.cfg" "weights/weights" -out_filename "media/output.mp4" -thresh 0.5 > "output/output.log"
 
 
 // darknet detector demo cfg/coco.data cfg/yolov4.cfg weights/yolov4.weights -ext_output test.mp4

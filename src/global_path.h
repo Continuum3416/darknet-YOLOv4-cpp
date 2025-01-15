@@ -11,5 +11,4 @@ namespace path{
     std::string config_path     = root + "config/yolov4.cfg";
     std::string weights_path    = root + "weights/yolov4.weights";
 
-
 }

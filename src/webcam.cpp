@@ -2,7 +2,7 @@
 #include <string>
 //#include <opencv2/opencv.hpp>
 #include "global_path.h"
-#include "command_line.h"
+#include "webcam.h"
 
 
 
@@ -24,7 +24,7 @@ int main() {
         darknet.validatePaths();
 
         // order doesn't matter as long as they're before executeDemo()
-        darknet.saveVideo(video_output_path);
+        darknet.saveMedia(video_output_path);
         darknet.saveData(data_output_path);
         darknet.setThreshold(threshold);
 
@@ -40,6 +40,6 @@ int main() {
 
 
 
-// Run: g++ webcam.cpp -o ./bin/webcam.exe; ./bin/webcam.exe
+// Run: cd src; g++ webcam.cpp -o ./bin/webcam.exe; ./bin/webcam.exe
 
 // cmake --build .\build\ --config Debug; .\build\Debug\webcam.exe
