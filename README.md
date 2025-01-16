@@ -34,7 +34,7 @@ Go to the src folder, which contains some codes at webcam.cpp and simply run
 ```
 g++ webcam.cpp -o ./bin/webcam.exe; ./bin/webcam.exe
 ```
-to run, or if you use OpenCV, build the folder with CMake and run
+or if you use OpenCV, build the folder with CMake and run
 ```
 cmake --build .\build\ --config Debug; .\build\Debug\webcam.exe
 
