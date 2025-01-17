@@ -71,3 +71,4 @@ int main() {
 
 // cmake --build .\build\ --config Debug; .\build\Debug\*.exe
 
+// LInux: cmake --build ./build --config Debug

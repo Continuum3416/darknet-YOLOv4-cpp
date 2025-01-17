@@ -8,8 +8,8 @@
 
 int main() {
     try {
-        std::string data_output_path = "D:/.C.S_Docs_and_Projects_C++/YOLO/darknet-YOLOv4-cpp/output/webcam_output.log"; 
-        std::string video_output_path = "D:/.C.S_Docs_and_Projects_C++/YOLO/darknet-YOLOv4-cpp/media/output.mp4";
+        std::string data_output_path = "/home/autonomy/Dev/darknet-YOLOv4-cpp/output/webcam_output.log"; 
+        std::string video_output_path = "/home/autonomy/Dev/darknet-YOLOv4-cpp/media/output.mp4";
         std::string threshold = "0.24";
 
         std::cout << path::data_path << std::endl;
@@ -21,7 +21,7 @@ int main() {
                                 path::weights_path);
 
         
-        darknet.validatePaths();
+        //darknet.validatePaths();
 
         // order doesn't matter as long as they're before executeDemo()
         darknet.saveMedia(video_output_path);
@@ -40,6 +40,8 @@ int main() {
 
 
 
-// Run: cd src; g++ webcam.cpp -o ./bin/webcam.exe; ./bin/webcam.exe
+// Run: cd src; g++ -std=c++17 webcam.cpp -o ./bin/webcam.exe; ./bin/webcam.exe
+
+// Linux: g++ -std=c++17 webcam.cpp -o ./bin/webcam; ./bin/webcam
 
 // cmake --build .\build\ --config Debug; .\build\Debug\webcam.exe

@@ -8,17 +8,17 @@ project(MyYOLOProject)
 set(CMAKE_CXX_STANDARD 17)
 
 # Define YOLO project source and directories
-set(DARKNET_DIR "C:/Libraries/YOLO/darknet-master")
+set(DARKNET_DIR "/home/autonomy/Dev/darknet")
 
 # Gather all .cpp files from the source directory
 file(GLOB SOURCES "test/*.cpp")
 
 # Set OpenCV path
-set(OpenCV_DIR "C:/Libraries/OpenCV/build")
+set(OpenCV_DIR "/home/autonomy/Dev/opencv/build")
 
 # Add OpenCV and CUDA paths (if needed)
 find_package(OpenCV REQUIRED PATHS ${OpenCV_DIR})
-find_package(CUDA REQUIRED)
+# find_package(CUDA REQUIRED)
 
 # Include directories for Darknet, OpenCV, and Pthreads
 include_directories(${DARKNET_DIR}/include)

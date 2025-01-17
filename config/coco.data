@@ -2,7 +2,7 @@ classes= 80
 train  = /home/pjreddie/data/coco/trainvalno5k.txt
 valid  = coco_testdev
 #valid = data/coco_val_5k.list
-names = D:/.C.S_Docs_and_Projects_C++/YOLO/darknet-YOLOv4-cpp/config/coco.names
+names = /home/autonomy/Dev/darknet-YOLOv4-cpp/config/coco.names
 backup = /home/pjreddie/backup/
 eval=coco
 
