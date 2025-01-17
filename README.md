@@ -42,7 +42,7 @@ cmake --build .\build\ --config Debug; .\build\Debug\webcam.exe
 cmake --build .\build\ --config Release; .\build\Release\webcam.exe
 ```
 #### on Linux, 
-you still have to specify C++ version in your .json setting file, and to run, use
+you still have to specify the C++ version in your .json setting file, and to run, use
 ```
 g++ -std=c++17 webcam.cpp -o ./bin/webcam; ./bin/webcam
 ```
