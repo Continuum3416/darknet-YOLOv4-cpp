@@ -37,8 +37,12 @@ g++ webcam.cpp -o ./bin/webcam.exe; ./bin/webcam.exe
 or if you use OpenCV, build the folder with CMake and run
 ```
 cmake --build .\build\ --config Debug; .\build\Debug\webcam.exe
-
 # or,
 
 cmake --build .\build\ --config Release; .\build\Release\webcam.exe
+```
+#### on Linux, 
+you still have to specify C++ version in your .json setting file, and to run, use
+```
+g++ -std=c++17 webcam.cpp -o ./bin/webcam; ./bin/webcam
 ```
